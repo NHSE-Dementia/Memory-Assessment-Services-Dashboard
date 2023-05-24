@@ -10,4 +10,4 @@ This repository contains the SQL script for the Memory Assessment Services Dashb
 * wait times from referral to first contact
 * wait times from referral to diagnosis
 
-There are two additional SQL scripts for an LSOA lookup table and for getting population data from the 2021 census. These two scripts are used to produce the rates of open referrals per 100,000 population graph in the dashboard.
+There are two additional SQL scripts for an LSOA lookup table and for getting population data from the 2021 census. These two scripts are required to produce the rates of open referrals per 100,000 population graph in the dashboard.
