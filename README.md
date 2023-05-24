@@ -2,16 +2,16 @@
 
 Script for Memory Assessment Services Dashboard for calculating the following: 
 
-*open referrals
+* open referrals
 
-*open referrals with no contact
+* open referrals with no contact
 
-*open referrals with a care plan
+* open referrals with a care plan
 
-*new referrals
+* new referrals
 
-*discharges
+* discharges
 
-*wait times from referral to first contact
+* wait times from referral to first contact
 
-*wait times from referral to diagnosis
+* wait times from referral to diagnosis
