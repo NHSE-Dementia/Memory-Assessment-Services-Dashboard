@@ -1,6 +1,6 @@
 # Memory Assessment Services Dashboard
 
-Script for Memory Assessment Services Dashboard for calculating the following: 
+This repository contains the SQL script for the Memory Assessment Services Dashboard for calculating the following: 
 
 * open referrals
 * open referrals with no contact
@@ -9,3 +9,5 @@ Script for Memory Assessment Services Dashboard for calculating the following:
 * discharges
 * wait times from referral to first contact
 * wait times from referral to diagnosis
+
+There are two additional SQL scripts for an LSOA lookup table and for getting population data from the 2021 census. These two scripts are used to produce the rates of open referrals per 100,000 population graph in the dashboard.
