@@ -199,7 +199,7 @@ FROM [NHSE_MHSDS].[dbo].[MHS604PrimDiag] p
 WHERE
 (p.[PrimDiag] IN
 
-(--Dementia SNOMED codes Page 13 of Dementia Care Pathway Appendices
+(--Dementia ICD10 codes Page 13 of Dementia Care Pathway Appendices
 'F00.0','F00.1','F00.2','F00.9','F01.0','F01.1','F01.2','F01.3','F01.8','F01.9','F02.0','F02.1','F02.2','F02.3','F02.4','F02.8','F03','F05.1'
 ,'F000','F001','F002','F009','F010','F011','F012','F013','F018','F019','F020','F021','F022','F023','F024','F028','F051'
 
@@ -248,7 +248,7 @@ FROM [NHSE_MHSDS].[dbo].[MHS605SecDiag] r
 WHERE 
 (r.[SecDiag] IN 
 
-(--Dementia SNOMED codes Page 13 of Dementia Care Pathway Appendices
+(--Dementia ICD10 codes Page 13 of Dementia Care Pathway Appendices
 'F00.0','F00.1','F00.2','F00.9','F01.0','F01.1','F01.2','F01.3','F01.8','F01.9','F02.0','F02.1','F02.2','F02.3','F02.4','F02.8','F03','F05.1'
 ,'F000','F001','F002','F009','F010','F011','F012','F013','F018','F019','F020','F021','F022','F023','F024','F028','F051'
 
