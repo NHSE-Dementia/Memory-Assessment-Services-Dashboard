@@ -1,6 +1,8 @@
 # Memory Assessment Services Dashboard
 
-This repository contains the SQL script for the Memory Assessment Services Dashboard for calculating the following: 
+Please note this information is experimental and it is only intended for use for management purposes.
+
+This repository contains three SQL scripts for the Memory Assessment Services Dashboard for calculating the following: 
 
 * open referrals
 * open referrals with no contact
