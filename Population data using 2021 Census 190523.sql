@@ -1,3 +1,5 @@
+--Please note this information is experimental and it is only intended for use for management purposes.
+
 /****** Script to produce populations by different protected characteristics (age, gender and ethnicity) and geographies (National, ICB and Sub-ICB) using the 2021 census data.
 		This is used in the Memory Assessment Services (MAS) dashboard to produce the rates of open referrals per 100,000 population graph. ******/
 
