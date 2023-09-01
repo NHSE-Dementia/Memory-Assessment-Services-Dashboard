@@ -7,10 +7,9 @@
 
 DECLARE @PeriodStart DATE
 DECLARE @PeriodEnd DATE 
+DECLARE @PeriodStart2 DATE
 
-------PLEASE UPDATE:
-DECLARE @Offset INT = -24 --For refreshing each superstats this should be updated to the offset for April 2021 in relation to starting at -1 
-							--so when April 2023 is -1 and April 2021 is -25, the @Offset=-24 as -1-24=-25
+SET @PeriodStart2 = '2021-04-01' 
 
 ------For refreshing months each superstats this will always be -1 to get the latest refreshed month available
 SET @PeriodStart = (SELECT DATEADD(MONTH,-1,MAX([ReportingPeriodStartDate])) FROM [MESH_MHSDS].[MHSDS_SubmissionFlags]) 
@@ -121,7 +120,7 @@ FROM [MESH_MHSDS].[MHS101Referral] r
 		LEFT JOIN [MHDInternal].[TEMP_DEM_MAS_DIAG_Ranking] e ON s.UniqServReqID = e.UniqServReqID AND s.Der_Person_ID = e.Der_Person_ID and e.RowIDEarliest=1
 		LEFT JOIN [MHDInternal].[TEMP_DEM_MAS_DIAG_Ranking] l ON s.UniqServReqID = l.UniqServReqID AND s.Der_Person_ID = l.Der_Person_ID and l.RowIDLatest=1
 WHERE 
-sf.ReportingPeriodStartDate IS NOT NULL and sf.[ReportingPeriodStartDate] BETWEEN DATEADD(MONTH, @Offset, @PeriodStart) AND @PeriodStart
+sf.ReportingPeriodStartDate IS NOT NULL and sf.[ReportingPeriodStartDate] BETWEEN @PeriodStart2 AND @PeriodStart
 GO
 
 

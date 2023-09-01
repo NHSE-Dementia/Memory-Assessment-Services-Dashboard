@@ -10,12 +10,9 @@ DECLARE @PeriodEnd DATE
 
 DECLARE @Offset INT = -11 --For refreshing each superstats this should be kept as -11 (this means the base table is produced from April 2020 to March 2021)
 
-------PLEASE UPDATE:
-DECLARE @Offset2 INT = -25 --For refreshing each superstats this should be updated to the offset needed for March 2021 
-
 ------For refreshing months each superstats this will always be -1 to get the latest refreshed month available
-SET @PeriodStart = (SELECT DATEADD(MONTH,@Offset2,MAX([ReportingPeriodStartDate])) FROM [MESH_MHSDS].[MHSDS_SubmissionFlags]) 
-SET @PeriodEnd = (SELECT eomonth(DATEADD(MONTH,@Offset2,MAX([ReportingPeriodEndDate]))) FROM [MESH_MHSDS].[MHSDS_SubmissionFlags])
+SET @PeriodStart = '2021-03-01'  
+SET @PeriodEnd = '2021-03-31'
 SET DATEFIRST 1
 
 PRINT @PeriodStart
