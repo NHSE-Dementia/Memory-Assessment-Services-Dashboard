@@ -1,3 +1,5 @@
+--Please note this information is experimental and it is only intended for use for management purposes.
+
 /****** Script for producing a lookup for LSOA 2021 codes to MSOA 2021 codes to Sub-ICB Codes/Names to ICB COdes/Names to Region Name
 		This table is used to enable aggregation of 2021 census population data, which is available at LSOA or MSOA levels, to Sub-ICB/ICB/Region levels******/
 

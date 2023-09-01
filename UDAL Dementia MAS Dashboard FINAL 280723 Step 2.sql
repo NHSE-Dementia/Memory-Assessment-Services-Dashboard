@@ -1,3 +1,5 @@
+--Please note this information is experimental and it is only intended for use for management purposes.
+
 /****** Script for Memory Assessment Services Dashboard for calculating the following: 
 		open referrals, open referrals with no contact, open referrals with a care plan, new referrals, discharges, 
 		wait times from referral to first contact, and wait times from referral to diagnosis ******/
