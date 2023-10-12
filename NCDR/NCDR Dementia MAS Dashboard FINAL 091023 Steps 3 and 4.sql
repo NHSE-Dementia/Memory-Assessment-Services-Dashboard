@@ -123,8 +123,8 @@ FROM [NHSE_MHSDS].[dbo].[MHS101Referral] r
 		LEFT JOIN [NHSE_Reference].[dbo].[tbl_Ref_ODS_Commissioner_Hierarchies] ch ON COALESCE(cc.New_Code, r.OrgIDComm) = ch.Organisation_Code COLLATE database_default 
 			AND ch.Effective_To IS NULL
 
-		LEFT JOIN [NHSE_Reference].[dbo].[tbl_Ref_Other_Provider_Successor] ps ON r.OrgID_Provider = ps.Prov_original COLLATE database_default
-		LEFT JOIN [NHSE_Reference].[dbo].[tbl_Ref_ODS_Provider_Hierarchies] ph ON COALESCE(ps.Prov_Successor, r.OrgID_Provider) = ph.Organisation_Code COLLATE database_default
+		LEFT JOIN [NHSE_Reference].[dbo].[tbl_Ref_Other_Provider_Successor] ps ON r.[OrgIDProv] = ps.Prov_original COLLATE database_default
+		LEFT JOIN [NHSE_Reference].[dbo].[tbl_Ref_ODS_Provider_Hierarchies] ph ON COALESCE(ps.Prov_Successor, r.[OrgIDProv]) = ph.Organisation_Code COLLATE database_default
 			AND ph.Effective_To IS NULL
 ------------------------------------------------------------------------------------------------------------------------------------------------
 		LEFT JOIN [NHSE_Sandbox_MentalHealth].[dbo].[TEMP_DEM_MAS_DIAG_Ranking] e ON s.UniqServReqID = e.UniqServReqID AND s.Der_Person_ID = e.Der_Person_ID and e.RowIDEarliest=1
